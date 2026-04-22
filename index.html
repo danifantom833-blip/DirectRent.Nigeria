@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DirectRent Nigeria</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="loader">
+<div class="spinner"></div>
+<h2>DirectRent Nigeria</h2>
+<p>Loading Innovation...</p>
+</div>
+
+<!-- Smart Top Tools -->
+<section class="top-tools">
+
+<div class="search-box">
+
+<input type="text" placeholder="Search location e.g Ado Ekiti">
+
+<select>
+<option>Rent</option>
+<option>Buy</option>
+<option>Project</option>
+</select>
+
+<select>
+<option>Budget</option>
+<option>₦250k</option>
+<option>₦500k</option>
+<option>₦1M+</option>
+</select>
+
+<button onclick="searchHomes()">Search</button>
+
+</div>
+
+<div class="quick-tools">
+
+<select onchange="changeLanguage(this.value)">
+<option>English</option>
+<option>Yoruba</option>
+<option>Hausa</option>
+<option>Igbo</option>
+</select>
+
+<button onclick="toggleSeniorMode()">Senior Mode</button>
+
+</div>
+
+</section>
+<!-- Animated Background -->
+<div class="bg-blur one"></div>
+<div class="bg-blur two"></div>
+
+<!-- Navbar -->
+<header class="navbar">
+
+<div class="logo">DirectRent Nigeria</div>
+
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
+
+<nav id="navMenu">
+<a href="index.html">Home</a>
+<a href="listings.html">Listings</a>
+<a href="developers.html">Developers</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<button class="nav-btn" onclick="quickApply()">Get Started</button>
+
+</header>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<div class="hero-left">
+
+<span class="hero-badge">
+Trusted Digital Housing Platform
+</span>
+
+<h1>
+Nigeria’s Smartest Way to <span>Find Property</span>
+</h1>
+
+<p>
+DirectRent Nigeria helps tenants, landlords, buyers and developers connect faster through a secure digital marketplace built for trust, speed and affordability.
+</p>
+
+<div class="hero-buttons">
+<button class="nav-btn">Browse Properties</button>
+<button class="secondary">Partner With Us</button>
+</div>
+
+<div class="hero-stats">
+
+<div>
+<h3>10K+</h3>
+<p>Users Target</p>
+</div>
+
+<div>
+<h3>1K+</h3>
+<p>Listings Goal</p>
+</div>
+
+<div>
+<h3>36 States</h3>
+<p>Expansion Plan</p>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="hero-right">
+
+<img src="images/hero-house.jpg" class="hero-img">
+
+</div>
+
+</section>
+<section class="hero">
+
+<div class="hero-left">
+
+<h1>
+Find Homes <span>Without Agents</span><br>
+Build Trust. Rent Smart. Live Better.
+</h1>
+
+<p>
+DirectRent Nigeria connects landlords directly to tenants, 
+and project developers directly to buyers. 
+Affordable housing made simple.
+</p>
+
+<div class="hero-buttons">
+<button class="primary">Explore Homes</button>
+<button class="secondary">Post Property</button>
+</div>
+
+<div class="stats">
+<div>
+<h3>5k+</h3>
+<p>Homes Ready</p>
+</div>
+
+<div>
+<h3>1k+</h3>
+<p>Landlords</p>
+</div>
+
+<div>
+<h3>₦0</h3>
+<p>Agent Stress</p>
+</div>
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="phone-app">
+
+<div class="phone-top">
+<div class="dot"></div>
+<div class="dot"></div>
+<div class="dot"></div>
+</div>
+
+<div class="app-card">
+<h4>2 Bedroom Flat</h4>
+<p>Lekki, Lagos</p>
+<span>₦1,200,000 / year</span>
+<button>View</button>
+</div>
+
+<div class="app-card">
+<h4>Self Contain</h4>
+<p>Ado Ekiti</p>
+<span>₦250,000 / year</span>
+<button>View</button>
+</div>
+
+<div class="app-card">
+<h4>New Estate Project</h4>
+<p>Abuja</p>
+<span>Buy Direct</span>
+<button>Invest</button>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="features">
+
+<h2>Why DirectRent Nigeria Is Different</h2>
+
+<div class="feature-grid">
+
+<div class="feature-box">
+<h3>🚫 No Agent Exploitation</h3>
+<p>Users connect directly with verified landlords and developers.</p>
+</div>
+
+<div class="feature-box">
+<h3>⚡ Faster House Search</h3>
+<p>Search homes by city, budget, rent type and availability.</p>
+</div>
+
+<div class="feature-box">
+<h3>🔒 Trust & Safety</h3>
+<p>Reviews, scam reporting, verification badges and support.</p>
+</div>
+
+<div class="feature-box">
+<h3>📈 Scalable Innovation</h3>
+<p>Built to serve every state in Nigeria and future African markets.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Features -->
+<section class="features">
+
+<h2>Why DirectRent Nigeria?</h2>
+
+<div class="feature-grid">
+
+<div class="feature-box">
+<h3>🚫 No Agent Exploitation</h3>
+<p>Landlords connect directly with tenants.</p>
+</div>
+
+<div class="feature-box">
+<h3>🏘 Affordable Housing</h3>
+<p>Transparent pricing with no hidden fees.</p>
+</div>
+
+<div class="feature-box">
+<h3>🏗 Developer Access</h3>
+<p>Buy projects directly from builders.</p>
+</div>
+
+<div class="feature-box">
+<h3>🔒 Verified Listings</h3>
+<p>Only trusted homes and projects.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Reviews -->
+<section class="features">
+
+<h2>What Users Are Saying</h2>
+
+<div class="feature-grid">
+
+<div class="feature-box">
+<h3>⭐⭐⭐⭐⭐</h3>
+<p>
+"I rented a house directly without paying agent stress fees."
+</p>
+<p><strong>— Mary, Ekiti</strong></p>
+</div>
+
+<div class="feature-box">
+<h3>⭐⭐⭐⭐⭐</h3>
+<p>
+"Very easy to find verified homes for my family."
+</p>
+<p><strong>— Musa, Kano</strong></p>
+</div>
+
+<div class="feature-box">
+<h3>⭐⭐⭐⭐⭐</h3>
+<p>
+"I connected directly with buyers for my estate project."
+</p>
+<p><strong>— Tunde, Lagos</strong></p>
+</div>
+
+<div class="feature-box">
+<h3>⭐⭐⭐⭐</h3>
+<p>
+"The senior mode helped my dad use the platform easily."
+</p>
+<p><strong>— Bisi, Ibadan</strong></p>
+</div>
+
+</div>
+
+</section>
+
+<section class="app-download">
+
+<h2 class="pulse">Get DirectRent Nigeria App Soon 📱</h2>
+
+<p style="max-width:700px;margin:auto;color:#d1d5db;line-height:1.8;">
+Soon available on mobile devices for faster house search, verified listings,
+direct landlord contact, project investment and housing support.
+</p>
+
+<div class="store-buttons">
+<button onclick="downloadApp()">📲 App Store</button>
+<button onclick="downloadApp()">🤖 Google Play</button>
+</div>
+
+</section>
+
+
+<section class="features">
+
+<h2>Why Judges Should Believe In This Idea</h2>
+
+<div class="feature-grid">
+
+<div class="feature-box">
+<h3>🏠 Solves Real Problem</h3>
+<p>House hunting stress and fake charges affect millions.</p>
+</div>
+
+<div class="feature-box">
+<h3>📱 Scalable Technology</h3>
+<p>Can grow across all states in Nigeria and beyond.</p>
+</div>
+
+<div class="feature-box">
+<h3>💰 Economic Impact</h3>
+<p>Supports housing markets, jobs and investment.</p>
+</div>
+
+<div class="feature-box">
+<h3>👨‍👩‍👧‍👦 Inclusive</h3>
+<p>Useful for youth, families, seniors and businesses.</p>
+</div>
+
+</div>
+
+</section>
+
+<div class="float-cta" onclick="quickApply()">
+🚀 Join Waitlist
+</div>
+
+<section class="features">
+
+<div class="feature-box" style="max-width:1000px;margin:auto;text-align:center;">
+
+<h2>🇳🇬 Built for Nigeria. Ready for Africa.</h2>
+
+<p style="font-size:20px;line-height:1.9;margin-top:20px;">
+DirectRent Nigeria is transforming housing access through technology —
+connecting people to homes, reducing exploitation, and creating trust in real estate.
+</p>
+
+<button class="nav-btn" style="margin-top:25px;" onclick="quickApply()">
+🚀 Support This Innovation
+</button>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+
+<h3>DirectRent Nigeria</h3>
+
+<p>
+Affordable Housing • Trusted Listings • Innovation for Nigeria
+</p>
+
+<p style="margin-top:10px;font-size:14px;">
+©️ 2026 DirectRent Nigeria. All Rights Reserved.
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
